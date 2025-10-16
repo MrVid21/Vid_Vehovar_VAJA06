@@ -9,21 +9,21 @@ namespace vaja6 {
         public string u_ime;
         public string u_geslo;
         public static int stIg = 1;
-
+        //privzeti konstruktor
         public Igralec() {
             u_ime = "";
             u_geslo = "";
             id = stIg;
             stIg++;
         }
-
+        //vrne lastnost Id
         public int Id {
             get
             {
                 return id;
             }
         }
-
+        //za vrnitev oz spremembo lastnosti u_ime
         public string U_ime {
             get
             {
@@ -34,7 +34,7 @@ namespace vaja6 {
                 u_ime = value.Trim();
             }
         }
-
+        //lastnost za u_geslo
         public string U_geslo
         {
             get
@@ -46,7 +46,7 @@ namespace vaja6 {
                 u_geslo = value.Trim();
             }
         }
-
+        //lastnost, ki vrne stIg
         public static int StIg
         {
             get { return stIg; }
